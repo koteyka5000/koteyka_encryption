@@ -62,7 +62,7 @@ def decrypt(encrypted: str, key:str=None):
                                                             # каждую вторую букву, чтобы получить исходный шифр
         move_keys_letters = encrypted_ready[enc_len:]    # срезаем 2\3 c конца (я хз как по другому) 
         move_keys_letters = move_keys_letters[enc_len:]  # срезаем еще половину (1\2), получая 1\3, где и находится ключ
-    print(f'{encrypted}    <txt | key>    {move_keys_letters}')
+    # print(f'{encrypted}    <txt | key>    {move_keys_letters}')
 
     decrypted = ''
     counter = 0
@@ -76,7 +76,7 @@ def decrypt(encrypted: str, key:str=None):
         counter += 1
     return decrypted
 
-txt = "Кот Е  Й  кА"
+txt = "а"
 encrypted = encrypt(txt)
 print(f'Зашифрованное сообщение: {encrypted}')
 
