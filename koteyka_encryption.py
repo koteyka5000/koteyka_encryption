@@ -75,19 +75,28 @@ def decrypt(encrypted: str, key:str=None):
         decrypted += alphabet[new_index]   # Ищем букву с этим индексом и добавляем её в итоговый вывод
         counter += 1
     return decrypted
+    
+# act = None
+# while act != 1:
+#     act = input('d \ e > ')
+#     txt = input('data > ')
+#     if act == 'd':
+#         print(decrypt(txt))
+#     else:
+#         print(encrypt(txt))
 
-txt = "а"
-encrypted = encrypt(txt)
-print(f'Зашифрованное сообщение: {encrypted}')
+# # txt = "они даже не догадываются что тут написано"
+# encrypted = encrypt(txt)
+# print(f'Зашифрованное сообщение: {encrypted}')
 
-decrypted = decrypt(encrypted)
-print(f'Расшифрованное сообщение: {decrypted}')
+# decrypted = decrypt(encrypted)
+# print(f'Расшифрованное сообщение: {decrypted}')
 
-print('======================================')
-print('Можно также получить текст и ключ по отдельности:\n')
+# print('======================================')
+# print('Можно также получить текст и ключ по отдельности:\n')
 
-encrypted_txt, encrypted_key = encrypt(txt, True)
-print(f'{encrypted_txt} : {encrypted_key}')
+# encrypted_txt, encrypted_key = encrypt(txt, True)
+# print(f'{encrypted_txt} : {encrypted_key}')
 
-decrypted = decrypt(encrypted_txt, encrypted_key)
-print(decrypted)
+# decrypted = decrypt(encrypted_txt, encrypted_key)
+# print(decrypted)
